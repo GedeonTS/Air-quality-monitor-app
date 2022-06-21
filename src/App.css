@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.link {
+    width: 50vw;
+    background: grey;
+    text-decoration: none;
+    height: 10vh;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 2px;
+}
+
+.link:hover {
+    width: 50vw;
+    background: rgba(128, 128, 128, 0.562);
+    text-decoration: none;
+    height: 10vh;
+    color: #fff;
+    font-size: 26px;
+    font-weight: 500;
+    margin: 2px;
+}
