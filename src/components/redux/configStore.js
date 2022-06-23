@@ -1,10 +1,12 @@
 import { createStore, combineReducers, applyMiddleware } from 'redux';
 import thunk from 'redux-thunk';
-import dataReducer from './actions'
+import dataReducer from './actions';
+import coordReducer from './coord';
 
 const allReducers = combineReducers({
-    paris:dataReducer
-})
+  data: dataReducer,
+  coord: coordReducer,
+});
 
 const store = createStore(allReducers, applyMiddleware(thunk));
 
