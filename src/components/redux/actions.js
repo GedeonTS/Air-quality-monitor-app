@@ -1,15 +1,15 @@
 import axios from 'axios';
 
-const GET_PARIS = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=48.8566&lon=2.3522&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_LONDON = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=51.5072&lon=0.1276&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_LISBON = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=38.7223&lon=9.1393&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_MADRID = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=40.4168&lon=3.7038&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_ROME = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=41.9028&lon=12.4964&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_BARCELONA = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=41.3874&lon=2.1686&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_WARSAW = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=52.2297&lon=21.0122&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_BRUSSELS = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=50.8476&lon=4.3572&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_COORD = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=50.8476&lon=4.3572&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
-const GET_EUROPE = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=54.5260&lon=15.2551&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_PARIS = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=48.8566&lon=2.3522&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_LONDON = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=51.5072&lon=0.1276&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_LISBON = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=38.7223&lon=9.1393&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_MADRID = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=40.4168&lon=3.7038&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_ROME = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=41.9028&lon=12.4964&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_BARCELONA = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=41.3874&lon=2.1686&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_WARSAW = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=52.2297&lon=21.0122&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_BRUSSELS = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=50.8476&lon=4.3572&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_COORD = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=50.8476&lon=4.3572&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
+const GET_EUROPE = 'https://api.openweathermap.org/data/2.5/air_pollution?lat=54.5260&lon=15.2551&appid=f1d8a4d595c7a03c5224b9f44ae09d6d';
 
 export const getData = (payload) => ({ type: GET_PARIS, payload });
 export const getCoord = (payload) => ({ type: GET_COORD, payload });
