@@ -8,6 +8,10 @@
 - React
 - Redux
 
+## Live Demo
+
+[Live Demo Link](https://air-quality-monitoring-a.netlify.app/)
+
 ## Authors
 
 👤 **Author : GEDEON USHINDI**
