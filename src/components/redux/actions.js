@@ -14,7 +14,7 @@ const GET_EUROPE = 'http://api.openweathermap.org/data/2.5/air_pollution?lat=54.
 export const getData = (payload) => ({ type: GET_PARIS, payload });
 export const getCoord = (payload) => ({ type: GET_COORD, payload });
 
-const dataReducer = (state = [], action = { type: '' }) => {
+const dataReducer = (state = {}, action = { type: '' }) => {
   switch (action.type) {
     case GET_PARIS:
       return action.payload;
