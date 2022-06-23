@@ -1,33 +1,56 @@
-import React from 'react'
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { useEffect } from 'react';
-import { fetchParis } from './redux/actions';
+import { Stack } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { IoIosArrowBack } from 'react-icons/io';
+import { Link } from 'react-router-dom';
+import { fetchData } from './redux/actions';
 
 function Paris() {
-  const data = useSelector((state) => state.paris)
+  const data = useSelector((state) => state.data);
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(fetchParis());
+    dispatch(fetchData());
   }, []);
   return (
-    <div>
-      <ul>
-        <li>{data.co}</li>
-        <li>{data.nh3}</li>
-        <li>{data.no}</li>
-        <li>{data.no2}</li>
-        <li>{data.o3}</li>
-        <li>{data.pm2_5}</li>
-        <li>{data.pm10}</li>
-        <li>{data.so2}</li>
-
-      </ul>
-
-      {
-        console.log(data)
-      }
-    </div>
-  )
+    <Stack gap={0} className="main-container">
+      <div className=" secondary-layer control"><Link to="/" className="arrow"><IoIosArrowBack /></Link></div>
+      <div className=" h-15 first-layer" style={{ background: 'linear-gradient(#e66465, #9198e5)' }}>PARIS</div>
+      <div className=" secondary-layer description">CITY&apos;S AIR COMPOSITION DATA</div>
+      <div className=" secondary-layer">
+        <div>co:</div>
+        <div>{data[0].co}</div>
+      </div>
+      <div className=" secondary-layer  link-1">
+        <div>NH3:</div>
+        <div>{data[0].nh3}</div>
+      </div>
+      <div className=" secondary-layer">
+        <div>NO:</div>
+        <div>{data[0].no}</div>
+      </div>
+      <div className=" secondary-layer link-1">
+        <div>NO2:</div>
+        <div>{data[0].no2}</div>
+      </div>
+      <div className=" secondary-layer">
+        <div>O3:</div>
+        <div>{data[0].o3}</div>
+      </div>
+      <div className=" secondary-layer link-1">
+        <div>PM2_5:</div>
+        <div>{data[0].pm2_5}</div>
+      </div>
+      <div className=" secondary-layer">
+        <div>PM10:</div>
+        <div>{data[0].pm10}</div>
+      </div>
+      <div className=" secondary-layer link-1">
+        <div>SO2:</div>
+        <div>{data[0].so2}</div>
+      </div>
+    </Stack>
+  );
 }
 
-export default Paris
+export default Paris;
