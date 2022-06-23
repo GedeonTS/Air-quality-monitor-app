@@ -9,11 +9,11 @@ function Home(props) {
         <h1 className="header-title">EUROPE</h1>
         <p className="header-coord">
           {coord[16]}
-          °N
+          &deg;N
         </p>
         <p className="header-coord">
           {coord[17]}
-          °E
+          &deg;E
         </p>
       </div>
       <div className="wrapper">
@@ -21,88 +21,88 @@ function Home(props) {
           <span>PARIS</span>
           <span>
             {coord[0]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[1]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/London" className="link link-1">
           <span>LONDON</span>
           <span>
             {coord[2]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[3]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/Lisbon" className="link link-1">
           <span>LISBON</span>
           <span>
             {coord[4]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[5]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/Madrid" className="link">
           <span>MADRID</span>
           <span>
             {coord[6]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[7]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/Rome" className="link">
           <span>ROME</span>
           <span>
             {coord[8]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[9]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/Barcelona" className="link link-1">
           <span>BARCELONA</span>
           <span>
             {coord[10]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[11]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/Warsaw" className="link link-1">
           <span>WARSAW</span>
           <span>
             {coord[12]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[13]}
-            °E
+            &deg;E
           </span>
         </Link>
         <Link to="/Brussels" className="link">
           <span>BRUSSELS</span>
           <span>
             {coord[14]}
-            °N
+            &deg;N
           </span>
           <span>
             { coord[15]}
-            °E
+            &deg;E
           </span>
         </Link>
 

@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Stack } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { IoIosArrowBack } from 'react-icons/io';
 import { Link } from 'react-router-dom';
 import { fetchData } from './redux/actions';
