@@ -1,4 +1,4 @@
-import dataReducer from '../components/redux/actions';
+import dataReducer from '../redux/actions';
 
 describe('test data reducer', () => {
   test('first test', () => {

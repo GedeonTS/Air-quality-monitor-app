@@ -1,4 +1,4 @@
-import coordReducer from '../components/redux/actions';
+import coordReducer from '../redux/actions';
 
 describe('test coord reducer', () => {
   test('first test', () => {
