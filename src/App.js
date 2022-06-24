@@ -4,7 +4,7 @@ import {
   Route,
 } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchData } from './components/redux/actions';
+import { fetchData } from './redux/actions';
 import Home from './components/Home';
 import Paris from './components/Paris';
 import Warsaw from './components/Warsaw';
