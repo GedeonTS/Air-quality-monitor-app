@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Stack } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { IoIosArrowBack } from 'react-icons/io';
@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom';
 import store from './store';
 
 function city() {
- 
   return (
     <Stack gap={0} className="main-container">
       <div className=" secondary-layer control"><Link to="/" className="arrow"><IoIosArrowBack /></Link></div>
