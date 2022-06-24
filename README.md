@@ -1,5 +1,12 @@
 # Air-quality-monitor - React project
-> In this task, I choosed the air pollution API to build a single page application(SPA) that provides air pollution data from eaurope's capitals. The application will allow users to access the most accurate data related to air quality such as the amount of CO,NH3,NO,NO2,O3 and the most important are the PM2_5,PM10,SO2.
+
+### Description
+
+|Homepage                                                               |  Details                                                              |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+|<img src='https://user-images.githubusercontent.com/97834160/175424730-104b0ac7-7086-45f7-8ce5-31dca62deb39.png' width='200'> | <img src='https://user-images.githubusercontent.com/97834160/175425285-efaa0508-90d9-4a12-8a47-29a59a50289a.png' width='220'>|
+
+> In this task, I choosed the air pollution API to build a single page application(SPA) that provides air pollution data from eaurope's capitals. The application will allow users to access the most accurate data related to air quality such as the amount of CO,NH3,NO,NO2,O3 and the most importants are the PM2_5,PM10,SO2.
 
 
 ## Built With
