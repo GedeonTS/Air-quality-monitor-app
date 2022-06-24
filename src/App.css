@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+}
+
+.wrapper {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0;
+}
+
+.link {
+  width: 50vw;
+  background: #f93152ee;
+  padding: 1rem;
+  text-decoration: none;
+  height: 25vh;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  flex-direction: column;
+}
+
+.link:hover {
+  background: #f93152;
+  text-decoration: none;
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header {
+  width: 100vw;
+  height: 25vh;
+  color: #fff;
+  padding: 1.4rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header-coord {
+  margin: 0;
+  font-size: 10px;
+}
+
+.header-title {
+  font-size: 3rem;
+  margin: 1.4rem;
+}
+
+.first-layer {
+  height: 30vh;
+  font-size: 2.5rem;
+  padding-left: 2rem;
+  padding-top: 1rem;
+}
+
+.secondary-layer {
+  height: 10vh;
+  background-color: #f93152ee;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  padding: 1rem;
+  justify-content: space-between;
+  font-weight: 500;
+}
+
+.arrow {
+  color: #fff;
+}
+
+.main-container {
+  color: #fff;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.description {
+  height: 4%;
+  font-size: 15px;
+}
+
+.control {
+  height: 4%;
+}
+
+.link-1 {
+  background: #be1935de;
+}

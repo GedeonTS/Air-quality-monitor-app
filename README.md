@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# Air-quality-monitor - React project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Description
 
-## Available Scripts
+|Homepage                                                               |  Details                                                              |
+|-----------------------------------------------------------------------|-----------------------------------------------------------------------|
+|<img src='https://user-images.githubusercontent.com/97834160/175424730-104b0ac7-7086-45f7-8ce5-31dca62deb39.png' width='200'> | <img src='https://user-images.githubusercontent.com/97834160/175425285-efaa0508-90d9-4a12-8a47-29a59a50289a.png' width='220'>|
 
-In the project directory, you can run:
+> In this task, I choosed the air pollution API to build a single page application(SPA) that provides air pollution data from eaurope's capitals. The application will allow users to access the most accurate data related to air quality such as the amount of CO,NH3,NO,NO2,O3 and the most importants are the PM2_5,PM10,SO2.
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Built With
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- JavaScript
+- React
+- Redux
 
-### `npm test`
+## Live Demo
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+[Live Demo Link](https://air-quality-monitoring-a.netlify.app/)
 
-### `npm run build`
+## Authors
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+👤 **Author : GEDEON USHINDI**
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- GitHub: [@GedeonTS](https://github.com/GedeonTS)
+- Twitter: [@Gedeon191](https://twitter.com/Gedeon191)
+- LinkedIn: [Ushindi Gedeon](https://linkedin.com/in/ushindi-gedeon)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+## Install
+### Run the project in your local machine
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Clone the repository
+```
+  $ git clone https://github.com/GedeonTS/air-quality-monitor.git
+  $ cd air-quality-monitor
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Install all dependances
+```
+$ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Run the server
+```
+$ npm start
+```
+- Open your browser and go to [localhost:3000](http://localhost:3000/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
+### Run Linters tests
+To track linter errors locally follow these steps:  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Download all the dependencies run:
+```
+$ npm install
+```
+Track HTML linter errors run:
+```
+$ npx hint .
+```
+Track CSS linter errors run:
+```
+$ npx stylelint "**/*.{css,scss}"
+```
+Track JavaScript linter errors run:
+```
+$ npx eslint .
+```
 
 ### Deployment
+- Netlify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Contributions, issues, and feature requests are welcome!
+
+## Show your support
+
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Original design idea by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) on Behance
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
