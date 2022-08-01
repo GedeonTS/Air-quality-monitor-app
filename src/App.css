@@ -1,12 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+
 body {
   margin: 0;
   padding: 0;
+  background: linear-gradient(#e66465, #9198e5);
+  font-family: 'Play', sans-serif;
 }
 
 .container {
   margin: 0;
   padding: 0;
   width: 100vw;
+}
+
+h1 {
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 .wrapper {
@@ -57,8 +66,9 @@ body {
 .first-layer {
   height: 30vh;
   font-size: 2.5rem;
-  padding-left: 2rem;
-  padding-top: 1rem;
+  display: flex;
+  font-family: 'Balsamiq Sans', cursive;
+  flex-direction: column;
 }
 
 .secondary-layer {
@@ -74,6 +84,15 @@ body {
 
 .arrow {
   color: #fff;
+  font-size: 1.5rem;
+  border: 2px solid #fff;
+  width: 1.8rem;
+  height: 1.8rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 20px;
 }
 
 .main-container {
@@ -92,4 +111,121 @@ body {
 
 .link-1 {
   background: #be1935de;
+}
+
+.search-section {
+  width: 90vw;
+  display: flex;
+  margin-top: 7px;
+  margin-left: 6px;
+}
+
+.search-bar-hidden {
+  display: none;
+}
+
+.search-bar-shown {
+  display: flex;
+  width: 300px;
+  animation: loading 3s 1;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+}
+
+@keyframes loading {
+  from { width: 0; }
+  to { width: 300px; }
+}
+
+.search-icon {
+  background: rgba(245, 189, 4, 0.61);
+  height: 40px;
+  width: 28px;
+  border-radius: 3px;
+}
+
+.search-icon:hover {
+  background: rgba(245, 189, 4, 0.836);
+}
+
+.results-section {
+  background: none;
+  min-height: 20vh;
+}
+
+.paris {
+  background-image: url('./assets/paris.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.rome {
+  background-image: url('./assets/rome.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.warsaw {
+  background-image: url('./assets/warsaw.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.madrid {
+  background-image: url('./assets/madrid.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.london {
+  background-image: url('./assets/london.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.lisbon {
+  background-image: url('./assets/lisbon.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.brussels {
+  background-image: url('./assets/brussles.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.barcelona {
+  background-image: url('./assets/barcelona.jpg');
+  padding-left: 20px;
+  padding-top: 1rem;
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.euro-img {
+  margin-top: 3rem;
 }
