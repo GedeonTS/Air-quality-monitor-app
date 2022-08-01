@@ -6,12 +6,16 @@ import { IoIosArrowBack } from 'react-icons/io';
 
 function City(props) {
   const {
-    title, CO, NH3, N0, NO2, O3, PM2_5, PM10, SO2,
+    title, CO, NH3, N0, NO2, O3, PM2_5, PM10, SO2, image, hider,
   } = props;
   return (
     <Stack gap={0} className="main-container">
-      <div className=" secondary-layer control"><Link to="/" className="arrow"><IoIosArrowBack /></Link></div>
-      <div className=" h-15 first-layer" style={{ background: 'linear-gradient(#e66465, #9198e5)' }}>{title}</div>
+      <div className=" h-15 first-layer" style={{ background: 'linear-gradient(#e66465, #9198e5)' }}>
+        <div className={image}>
+          <Link to="/" className="arrow" onClick={hider}><IoIosArrowBack /></Link>
+          {title}
+        </div>
+      </div>
       <div className=" secondary-layer description">CITY&apos;S AIR COMPOSITION DATA</div>
       <div className=" secondary-layer">
         <div>co:</div>

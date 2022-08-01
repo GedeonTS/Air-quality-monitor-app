@@ -1,22 +1,66 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { GrSearch } from 'react-icons/gr';
+import SearchResults from './SearchResults';
+import euro from '../assets/euro.png';
 
 function Home(props) {
+  const [searchBar, setSearchBar] = useState({
+    style: 'search-bar-hidden', header: 'flex', defaultOption: 'grid', searchResult: 'none', name: '',
+  });
   const { coord } = props;
+  const [search, setSearch] = useState({ name: '' });
+
+  const showBar = () => {
+    setSearchBar({
+      style: 'search-bar-shown',
+      defaultOption: 'none',
+      searchResult: 'flex',
+      name: search.name,
+      header: 'none',
+    });
+  };
+
+  const hideBar = () => {
+    setSearchBar({
+      style: 'search-bar-hidden',
+      defaultOption: 'grid',
+      searchResult: 'none',
+      name: '',
+    });
+  };
+
   return (
     <section className="container">
-      <div className="header" style={{ background: 'linear-gradient(#e66465, #9198e5)' }}>
-        <h1 className="header-title">EUROPE</h1>
-        <p className="header-coord">
-          {coord[16]}
-          &deg;N
-        </p>
-        <p className="header-coord">
-          {coord[17]}
-          &deg;E
-        </p>
+      <div className="search-section">
+        <input
+          type="text"
+          onChange={(e) => setSearch({ name: e.target.value })}
+          placeholder="search city"
+          className={searchBar.style}
+        />
+        <GrSearch
+          className="search-icon"
+          onClick={showBar}
+        />
       </div>
-      <div className="wrapper">
+      <div className="header" style={{ background: 'linear-gradient(#e66465, #9198e5)', display: searchBar.header }}>
+        <div>
+          <h1 className="header-title">EUROPE</h1>
+          <p className="header-coord">
+            {coord[16]}
+            &deg;N
+          </p>
+          <p className="header-coord">
+            {coord[17]}
+            &deg;E
+          </p>
+          <img src={euro} alt="euro" className="euro-img" />
+          <img src={euro} alt="euro" className="euro-img" />
+        </div>
+      </div>
+      <SearchResults style={searchBar.searchResult} name={searchBar.name} hider={hideBar} />
+      <div className="wrapper" style={{ display: searchBar.defaultOption }}>
         <Link to="/paris" className="link">
           <span>PARIS</span>
           <span>
@@ -24,7 +68,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[1]}
+            {coord[1]}
             &deg;E
           </span>
         </Link>
@@ -35,7 +79,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[3]}
+            {coord[3]}
             &deg;E
           </span>
         </Link>
@@ -46,7 +90,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[5]}
+            {coord[5]}
             &deg;E
           </span>
         </Link>
@@ -57,7 +101,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[7]}
+            {coord[7]}
             &deg;E
           </span>
         </Link>
@@ -68,7 +112,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[9]}
+            {coord[9]}
             &deg;E
           </span>
         </Link>
@@ -79,7 +123,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[11]}
+            {coord[11]}
             &deg;E
           </span>
         </Link>
@@ -90,7 +134,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[13]}
+            {coord[13]}
             &deg;E
           </span>
         </Link>
@@ -101,7 +145,7 @@ function Home(props) {
             &deg;N
           </span>
           <span>
-            { coord[15]}
+            {coord[15]}
             &deg;E
           </span>
         </Link>

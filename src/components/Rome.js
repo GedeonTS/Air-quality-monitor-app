@@ -3,7 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { fetchData } from '../redux/actions';
 import City from './modules/City';
 
-function Rome() {
+function Rome(props) {
+  const { hider } = props;
   const data = useSelector((state) => state.data);
   const dispatch = useDispatch();
   useEffect(() => {
@@ -11,15 +12,17 @@ function Rome() {
   }, []);
   return (
     <City
+      hider={hider}
       title="ROME"
-      CO={data[4].co}
-      NH3={data[4].nh3}
-      N0={data[4].no}
-      NO2={data[4].no2}
-      O3={data[4].o3}
-      PM2_5={data[4].pm2_5}
-      PM10={data[4].pm10}
-      SO2={data[4].so2}
+      image="rome"
+      CO={data[4] ? data[4].co : ''}
+      NH3={data[4] ? data[4].nh3 : ''}
+      N0={data[4] ? data[4].no : ''}
+      NO2={data[4] ? data[4].no2 : ''}
+      O3={data[4] ? data[4].o3 : ''}
+      PM2_5={data[4] ? data[4].pm2_5 : ''}
+      PM10={data[4] ? data[4].pm10 : ''}
+      SO2={data[4] ? data[4].so2 : ''}
     />
   );
 }
